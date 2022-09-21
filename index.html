@@ -3,47 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<a target="_blank" href="https://icons8.com/icon/GPEP-9aH2UB1/rainbow">Rainbow icon by Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/81176/arcoíris">Arcoíris icon by Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/80651/verano">Verano icon by Icons8</a>
 <link rel="stylesheet" href="css/common.css">
 <title>TUP LC2 - TP Integrador</title>
 <!-- Estilos CSS -->
 <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
+<div class="banner">
 <header>
 <h1>
-<span>Clima App</span>
+<span>Clima APP</span>
 </h1>
 <nav>
 <ul>
-<li><a href="index.html">Clima</a></li>
-<li><a href="/add-city.html">Agregar Ciudad</a></li>
-<li><a href="/help.html">Ayuda</a></li>
+<li class="current-page"><a href="#">Mi app</a></li>
+<li><a href="add-city.html">Ciudad</a></li>
+<li><a href="help.html">Ayuda</a></li>
 </ul>
 </nav>
+</div> 
 </header>
 <!-- Contenido principal de la página -->
 <main>
-<h2>El clima ahora</h2>
-<img id="icono" src="https://img.icons8.com/emoji/96/000000/rainbow-emoji.png"/>
+<div class="container-all">
+<h2><img src="https://img.icons8.com/doodle/96/000000/rainbow--v1.png"/> El clima ahora</h2>
+</div>
 <section id="form-city-list">
-<form action="">
-<select name="seleccionable" id="seleccionable">
-    <option value="Seleccionar" selected>Seleccione ciudad</option>
-    <option value="Rosario">Rosario</option>
-    <option value="Rafaela">Rafaela</option>
-<input type="button" value="consultar">
-</select>
- </form>   
-<!-- Sección donde se debe colocar el formulario, con el select y el
-botón de consultar -->
-</section>
+    <form action="" input="select">
+        <select name="seleccionable" id="seleccionable">
+            <option value="Seleccionar" disable - selected>Seleccione ciudad</option>
+            <option value="Rosario">Rosario</option>
+            <option value="Rafaela">Rafaela</option>
+        <input type="button" value="consultar">
+        </select>
+         </form>   
+</section>    
+</main>   
 <section id="section-weather-result">
-<!-- Sección donde se debe mostrar el clima de la ciudad -->
-<h3>Rosario</h3>
+    <div class="card">
+        <h3>Rosario</h3>
+        <img class="rosario-img" src="https://img.icons8.com/doodle/48/000000/summer.png"/>
+        <p>Temperatura: 25.31° <br></p>
+        <p>Sensación térmica: 24.65° <br></p>
+        <p>Humedad: 29% <br></p>
+        <p>Velocidad del viento: 4.63km/h <br></p>
+        <p>Presión: 1011 P <br></p>
+    </p>
+    </div>
 </section>
 </main>
 <footer>
+
 <p>
 Desarrollado con ♥ - LC2
 </p>

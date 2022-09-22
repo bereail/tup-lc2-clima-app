@@ -9,34 +9,48 @@
 <!-- Estilos CSS -->
 <link rel="stylesheet" href="css/common.css">
 </head>
-<body>
-<header>
-<h1>
-<span>Clima APP</span>
-</h1>
-<nav>
-<ul>
-<li><a href="index.html">Mi app</a></li>
-<li><a href="add-city.html">Ciudad</a></li>
-<li class="current-page"><a href="#">Ayuda</a></li>
-</ul>
-</nav>
-</header>
-<main>
-    <div class="container-all">
-    <h2><img src="https://img.icons8.com/doodle/48/000000/lifebuoy--v1.png"/>Ayuda Clima App v.1.0</h2>
-    </div>
-   
-    </main>   
-    <section id="section-weather-result">
-    <!-- Sección donde se debe mostrar el clima de la ciudad -->
-    </section>
-    </main>
-    <footer>
 
-    <p>
-    Desarrollado con ♥ - LC2
-    </p>
+
+<body>
+    <header>
+        <h1>
+            <span>Clima APP</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Mi app</a></li>
+                <li><a href="add-city.html">Ciudad</a></li>
+                <li class="current-page"><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- Sección donde se debe mostrar cabecera de ayuda-->
+<main>
+    <div class="ayuda">
+        <h2><img src="https://img.icons8.com/doodle/48/000000/lifebuoy--v1.png"/>Ayuda Clima App v.1.0</h2>
+        </div>            
+    <!-- Sección donde se debe mostrar los pasos para pedir ayuda-->
+        <section class="texto-ayuda">
+              <p>Esta App permite consultar el clima de una ciudad en particular utilizando la
+               Api de <a href="“https://openweathermap.org/api" target="_blank">OpenWatherMap</a><br>
+               Para poder consultar el clima, primera deberá <a href="add-city.html" target="_blank">Agregar una ciudad</a> y luego
+               seleccionar la Ciudad en ecuestión desde una página <a href="index.html" target="_blank">Clima.</a></p>
+        </section>
+        <section class="formulario-ayuda">
+            <form action="">
+                <label for="Nombre">Nombre:</label>
+                <input type="text"><br>
+                <label for="Email">Email:</label>
+                <input type="email"><br>
+                <label for="Mensjae">Mensaje:</label> 
+                <textarea name="" id="" cols="30" rows="10"></textarea> <br>
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar">
+            </form>
+        </section>   
+</main>  
+    <footer class="pie-de-pagina">
+        <p> Desarrollado con ♥ - LC2 </p>
     </footer>
-    </body>
-    </html>
+</body>
+</html>

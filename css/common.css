@@ -19,6 +19,7 @@
     var(--color-back-active));
 }
 
+
 body {
     height: 100%;
     width: 100%;
@@ -89,7 +90,7 @@ h1>img {
 }
 
 h2 {
-    color: var (--color-theme);
+    color:  #00594c;
     margin: 5px, 0,0, 16 ;
     font-size: 80px;    
     text-align: center;
@@ -104,6 +105,7 @@ main section {
     display: flex;
     justify-content: space-around;
 }
+
 
 footer {
     position: fixed;
@@ -131,22 +133,20 @@ nav li a {
     color: white;
 }
 
-.banner{
-    width: auto;
-    margin-bottom: 5px;
-}
 
-.conteiner-all{
-    width: 100%;
-    heighzzz
-    max-width: 10000px;
+.container-all{
     float: left;
     margin: auto;
-    background-color: aliceblue;
-    margin-top: 60px;
     border-top: 6px;
+    display: flex;
+    justify-content: center;
+
 }
 
+.texto-ayuda{
+    display: flex;
+    justify-content: center;
+}
 
 nav li.current-page a {
     color: var (--color-theme);
@@ -156,7 +156,7 @@ nav li.current-page a {
 
 main {
     margin-top: 120px;
-    overflow: auto;
+    overflow: auto;s
     padding: 16px;
     padding-bottom: 60px;
     height: calc (100% - 120px);
@@ -206,6 +206,36 @@ footer p {
 
 main p {
     margin-bottom: 16px;
+}
+
+#section-weather-result {
+    font-size: larger;
+    text-align: center;
+    width: 100%;
+    max-width: 10000px;
+    float: left;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.formulario-ayuda{
+    font-size: 18px;
+}
+
+.formulario-agregar-ciudad{
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.text-area{
+    resize: both;
+}
+
+.pie-de-pagina{
+    background-color: #00594c;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */

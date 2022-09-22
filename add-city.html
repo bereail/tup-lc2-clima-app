@@ -9,35 +9,37 @@
 <!-- Estilos CSS -->
 <link rel="stylesheet" href="css/common.css">
 </head>
+
 <body>
-<header>
-<h1>
-<span>Clima APP</span>
-</h1>
-<nav>
-<ul>
-<li><a href="index.html">Mi app</a></li>
-<li class="current-page"><a href="#">Ciudad</a></li>
-<li><a href="help.html">Ayuda</a></li>
-</ul>
-</nav>
+    <header>
+        <h1>
+            <span>Clima APP</span>
+        </h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Mi app</a></li>
+            <li class="current-page"><a href="#">Ciudad</a></li>
+            <li><a href="help.html">Ayuda</a></li>
+        </ul>
+    </nav>
 </header>
+
+   <!-- Contenido principal de la pagina-->
 <main>
-    <div class="container-all">
     <h2><img src="https://img.icons8.com/clouds/100/000000/city-buildings.png"/>Agregar ciudad</h2>
-    </div>   
-    </main>   
-    <section id="section-weather-result">
-        <form action="">
-            Agregar ciudad: <input type="text"> <br>
-            <input type="button" value="Agregar">
-             </form>  
+     <section>
+        <form action="" class="formulario-agregar-ciudad">
+            <label for="Ciudad">Ingrese ciudad</label>
+            <input type="text"><br>
+            <input type="submit" value="Agregar">
+        </form>
     </section>
-    </main>
-    <footer>
+</main>
+
+<footer class="pie-de-pagina">
     <p>
     Desarrollado con ♥ - LC2
     </p>
-    </footer>
-    </body>
-    </html>
+</footer>
+</body>
+</html>

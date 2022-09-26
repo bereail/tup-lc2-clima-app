@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<a target="_blank" href="https://icons8.com/icon/81715/salvavidas">Salvavidas icon by Icons8</a>
-<link rel="stylesheet" href="css/common.css">
-<title>TUP LC2 - TP Integrador</title>
-<!-- Estilos CSS -->
-<link rel="stylesheet" href="css/common.css">
-</head>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima APP</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1434/1434804.png">
+</head>
 
 <body>
     <header>
         <h1>
-            <span>Clima APP</span>
+            <span>Clima App</span>
         </h1>
         <nav>
             <ul>
-                <li><a href="index.html">Mi app</a></li>
+                <li><a href="index.html">Clima</a></li>
                 <li><a href="add-city.html">Ciudad</a></li>
-                <li class="current-page"><a href="#">Ayuda</a></li>
+                <li class="current-page"><a href="help.html">Ayuda</a></li>
             </ul>
         </nav>
-</header>
-<!-- Sección donde se debe mostrar cabecera de ayuda-->
-<main>
-    <div class="ayuda">
-        <h2><img src="https://img.icons8.com/doodle/48/000000/lifebuoy--v1.png"/>Ayuda Clima App v.1.0</h2>
-        </div>            
-    <!-- Sección donde se debe mostrar los pasos para pedir ayuda-->
-        <section class="texto-ayuda">
-              <p>Esta App permite consultar el clima de una ciudad en particular utilizando la
-               Api de <a href="“https://openweathermap.org/api" target="_blank">OpenWatherMap</a><br>
-               Para poder consultar el clima, primera deberá <a href="add-city.html" target="_blank">Agregar una ciudad</a> y luego
-               seleccionar la Ciudad en ecuestión desde una página <a href="index.html" target="_blank">Clima.</a></p>
-        </section>
-        <section class="formulario-ayuda">
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+        <h2>Ayuda</h2>
+        <p>Esta App te permite consultar el clima de una ciudad en particular utilizando la API
+            de <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></p>
+        <p>Para poder consultar el clima, primero debera <a href="./add-city.html">Agregar una ciudad</a> y luego
+            seleccionar la Ciudad en cuestión desde la página <a href="./index.html">Clima</a></p>
+        <section>
             <form action="">
-                <label for="Nombre">Nombre:</label>
-                <input type="text"><br>
-                <label for="Email">Email:</label>
-                <input type="email"><br>
-                <label for="Mensjae">Mensaje:</label> 
-                <textarea name="" id="" cols="30" rows="10"></textarea> <br>
-                <input type="reset" value="Limpiar">
-                <input type="submit" value="Enviar">
+                <label for="name">Nombre: </label>
+                <input type="text" id="name" name="name" placeholder="">
+                <br><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email">
+                <br><br>
+
+                <label for="Mensaje">Mensaje:</label>                
+                <textarea name="Mensaje:" cols="40" rows="10" input type="text" minlength="10" id=""></textarea>
+                <br><br>
+
+                <button id="clear">Limpiar</button>
+                <button>Enviar</button>
             </form>
-        </section>   
-</main>  
-    <footer class="pie-de-pagina">
-        <p> Desarrollado con ♥ - LC2 </p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Desarrollado con ♥ - LC2
+        </p>
     </footer>
 </body>
+
 </html>

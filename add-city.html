@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<a target="_blank" href="https://icons8.com/icon/Wz93u2lpGiQW/edificios-de-la-ciudad">Edificios de la ciudad icon by Icons8</a>
-<link rel="stylesheet" href="css/common.css">
-<title>TUP LC2 - TP Integrador</title>
-<!-- Estilos CSS -->
-<link rel="stylesheet" href="css/common.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima APP</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1434/1434804.png">
 </head>
 
 <body>
     <header>
         <h1>
-            <span>Clima APP</span>
+            <span>Clima App</span>
         </h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Mi app</a></li>
-            <li class="current-page"><a href="#">Ciudad</a></li>
-            <li><a href="help.html">Ayuda</a></li>
-        </ul>
-    </nav>
-</header>
-
-   <!-- Contenido principal de la pagina-->
-<main>
-    <h2><img src="https://img.icons8.com/clouds/100/000000/city-buildings.png"/>Agregar ciudad</h2>
-     <section>
-        <form action="" class="formulario-agregar-ciudad">
-            <label for="Ciudad">Ingrese ciudad</label>
-            <input type="text"><br>
-            <input type="submit" value="Agregar">
-        </form>
-    </section>
-</main>
-
-<footer class="pie-de-pagina">
-    <p>
-    Desarrollado con ♥ - LC2
-    </p>
-</footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Clima</a></li>
+                <li class="current-page"><a href="add-city.html">Ciudad</a></li>
+                <li><a href="help.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+        <h2>Agregar Ciudad</h2>
+        <section>
+            <form action="#">
+                <label for="new-city">Ingrese la ciudad a agregar: </label>
+                <input type="text" id="new-city" name="new-city">
+                <button>Agregar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Desarrollado con ♥ - LC2
+        </p>
+    </footer>
 </body>
+
 </html>

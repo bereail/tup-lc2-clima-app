@@ -4,29 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Clima app</title>
-<!-- Estilos CSS -->
-<link rel="stylesheet" href="css/common.css">
+
+    <!-- Estilos CSS -->
+<link rel="stylesheet" href="./css/index.css">
 <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1434/1434804.png">
 </head>
 <body>
-<header>
+
+    <!-- Banner -->
+<header class="banner">
 <h1>
 <link rel="manifest" href="img/favicon_io/apple-touch-icon.png">
 <span>Clima App</span>
 </h1>
-<nav>
+
+    <!-- Contenido-Banner -->
+<nav  class="contenido-banner">
 <ul>
-<li class="current-page"><a href="#">Mi App</a></li>
+<li class="current-page" id="contenido-banner"><a href="#">Clima</a></li>
 <li><a href="add-city.html">Ciudad</a></li>
 <li><a href="help.html">Ayuda</a></li>
 </ul>
 </nav>
 </header>
-<!-- Contenido principal de la página -->
+
+    <!-- Contenido principal de la página -->
 <main>
 <h2>El clima ahora</h2>
 <section id="form-city-list">
-<!--     Fomulario   -->
+    <!--     Fomulario   -->
 <form action="" input="select">
     <select name="seleccionable" id="seleccionable">
         <option value="Seleccionar" disable - selected>Seleccione ciudad</option>
@@ -36,8 +42,9 @@
     </select>
 </form>  
 </section>
+
+    <!-- Sección donde se debe mostrar el clima de la ciudad -->
 <section id="section-weather-result">
-<!-- Sección donde se debe mostrar el clima de la ciudad -->
     <div class="card">
         <h3>Rosario</h3>
         <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="map">
@@ -50,6 +57,8 @@
     </div>
 </section>
 </main>
+
+    <!--Pie de página-->
 <footer>                                                                                                                                                                                                                                                                                    --------1
 <p>
 Desarrollado con ♥ - LC2
